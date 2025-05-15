@@ -1,0 +1,163 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #9bcfa3;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #e41085;
+}
+
+.title {
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #043b26;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background-color: #005f4b;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #070707;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #0073e6;
+    border-radius: 12px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #043b26;
+    color: white;
+}
+
+/* Form */
+form {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+input, select, button {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    background-color: #000a00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b57600;
+}
+
+/* Responsive Layout - Flex/Grid */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+}
+
+/* Responsive Typography and Spacing */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Bar -->
+<nav>
+    <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Languages</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+</nav>
+
+        <h1 class="title">Advanced HTML5 Elements</h1>
+    </header>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Programming Languages</h2>
+        <ol type="I">
+            <li>Python</li>
+            <li>Javascript</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Ruby</li>
+        </ol>
+    </section>
+    
+    <!-- External Image -->
+    <section>
+        <h2>Tokyo City</h2>
+        <img src="https://images.pexels.com/photos/31001132/pexels-photo-31001132/free-photo-of-vibrant-shinjuku-street-at-night-in-tokyo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample Image from Pexels" width="400">
+    </section>
+    
+    <!-- Contacts Table -->
+    <section>
+        <h2>Celebrity Contacts</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Michael Jackson</td>
+                <td>54th Main St</td>
+                <td>+1234567890</td>
+                <td>mj@hotmail.com</td>
+            </tr>
+            <tr>
+                <td>Jeniffer Lopez</td>
+                <td>456 Elm St</td>
+                <td>+1987654321</td>
+                <td>jlopez@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Michael B. Jordan</td>
+                <td>789 Pine St</td>
+                <td>+1122334455</td>
+                <td>jb.michael@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Chris Brown</td>
+                <td>101 Maple St</td>
+                <td>+1223344556</td>
+                <td>cbrown@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Lil Wayne</td>
+                <td>202 Oak St</td>
+                <td>+1334455667</td>
+                <td>liwayne@outlook.com</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Registration Form -->
+    <section>
+        <h2>Concert Registration Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a password" required><br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+            
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Tanzania">Tanzania</option>
+            </select><br><br>
+            
+            <label>Hobbies:</label>
+            <input type="checkbox" id="Swimming" name="interests" value="Swimming">
+            <label for="Swimming">Swimming</label>
+            <input type="checkbox" id="Cooking" name="interests" value="Cooking">
+            <label for="Cooking">Cooking</label>
+            <input type="checkbox" id="Playing Video Games" name="interests" value="Playing Video Games">
+            <label for="Playing Video Games">Playing Video Games</label><br><br>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <!-- Interaction Buttons -->
+<section>
+    <h2>DOM Interaction</h2>
+    <button onclick="changeTitle()">Change Title Text</button>
+    <button onclick="highlightForm()">Highlight Form</button>
+    <button onclick="addHobby()">Add Hobby</button>
+    <button onclick="removeImage()">Remove Image</button>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 JavaScript DOM Demo. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript File -->
+<script src="script.js"></script>
+</body>
+</html>
